@@ -7,5 +7,5 @@ It uses the BIP39 wordlist for autocompletion during input.
 - extract `encrypt` and `decrypt` functions to npm library
 - add docs
 - github actions for `sls deploy`
-- styles?
 - add pages with information to the app + SEO
+- styles?
