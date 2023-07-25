@@ -38,7 +38,8 @@ function App() {
       <div className="container">
         <h1 className="title">SeedCrypt</h1>
         <h2 className="subtitle">Encrypt/decrypt your seed phrase by BIP39 key!</h2>
-        <p className="subtitle small"><b>OpenSource:</b> (soon) if you don't trust this app - deploy it by yourself.</p>
+        <p className="subtitle small"><b>OpenSource:</b> if you don't trust this app - deploy it by yourself:</p>
+        <p><a href="#" onClick={() => window.open('https://github.com/seedcrypt/app')}>github.com/seedcrypt/app</a></p>
         <div className="input-section">
           <h2 className="subtitle">Seed Phrase:</h2>
           <SeedPhraseInput words={phraseWords} onChange={setPhraseWords} />
