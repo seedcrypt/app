@@ -6,5 +6,6 @@ It uses the BIP39 wordlist for autocompletion during input.
 - domains: seedcrypt.app and seedcrypt.io
 - extract `encrypt` and `decrypt` functions to npm library
 - add docs
-- gitlab actions
+- github actions for `sls deploy`
 - styles?
+- add pages with information to the app + SEO
