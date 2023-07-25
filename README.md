@@ -14,7 +14,7 @@ It uses the BIP39 wordlist for autocompletion during input.
 ## Proof of transparency
 
 - **Network** tab in browser: there are **no requests to server after** the initial load
-- `src/utils/crypto.ts` - `encrypt` and `decrypt` functions: simple algorithm based on Caesar cipher. `passwordToBIP` - be careful with encoding
+- `src/utils/crypto.ts` - `encrypt` and `decrypt` functions: simple algorithm based on modified **Caesar cipher**. `passwordToBIP` - be careful with encoding
 - `src/App.tsx` - 2 input fields for seed phrase and key with `SeedPhraseInput` component, 2 buttons for encryption and decryption, 1 output field for result
 - `src/components/SeedPhraseInput.tsx` - input field with autocomplete based on BIP39 wordlist
 
