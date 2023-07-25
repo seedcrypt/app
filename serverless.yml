@@ -1,0 +1,24 @@
+service: seedcode
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: eu-south-2
+  profile: default
+  stage: prod
+
+functions:
+  app:
+    handler: handler.app
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+
+package:
+  individually: true
+  excludeDevDependencies: true
+  exclude:
+    - ./**
+  include:
+    - build/**
+    - handler.js
