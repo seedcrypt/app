@@ -37,3 +37,18 @@ npm run start
 yarn
 yarn start
 ```
+
+## Deployment to AWS Serverless:
+
+### Without API Gateway/Custom domains/...
+`cp .env.example .env` - sets `PUBLIC_URL=/prod` for default AWS adresses
+`yarn build && npx sls deploy`
+
+### With API Gateway/ACM/Custom domains/Hosted zones/...
+1. `yarn build && npx sls deploy`
+2. Create domain at Route 53 -> Hosted zones
+3. Set DNS for domain
+4. Create certificate at ACM
+5. Add records
+6. API Gateway -> Custom domains -> Create -> Regional ->...
+7. Hosted zones -> domain -> Wizard -> alias for API Gateway -> Domain
