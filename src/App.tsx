@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import SeedPhraseInput from './components/SeedPhraseInput';
-import { encrypt, decrypt, passwordToBip } from './utils/crypto'; // Вам нужно будет реализовать passwordToBip
+import { encrypt, decrypt, passwordToBip } from './utils/crypto';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   const [phraseWords, setPhraseWords] = useState<string[]>([]);
   const [keyWords, setKeyWords] = useState<string[]>([]);
   const [result, setResult] = useState<string>('');
@@ -14,8 +14,9 @@ function App() {
   const handleCopy = () => {
     navigator.clipboard.writeText(result);
     setIsCopied(true);
-    setTimeout(() => setIsCopied(false), 2000); // Сообщение будет отображаться в течение 2 секунд
+    setTimeout(() => setIsCopied(false), 2000);
   };
+
   const handleEncrypt = () => {
     const key = isPassword ? passwordToBip(password) : keyWords.join(' ');
     console.log(key);
