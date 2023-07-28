@@ -41,7 +41,9 @@ yarn start
 ## Deployment to AWS Serverless:
 
 ### Without API Gateway/Custom domains/...
+
 `cp .env.example .env` - sets `PUBLIC_URL=/prod` for default AWS adresses
+
 `yarn build && npx sls deploy`
 
 ### With API Gateway/ACM/Custom domains/Hosted zones/...
