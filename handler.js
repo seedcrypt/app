@@ -45,6 +45,7 @@ function getContentType(filePath) {
     if (filePath.endsWith('.js')) return 'application/javascript';
     if (filePath.endsWith('.css')) return 'text/css';
     if (filePath.endsWith('.png')) return 'image/png';
+    if (filePath.endsWith('.svg')) return 'image/svg+xml';
     if (filePath.endsWith('.jpg') || filePath.endsWith('.jpeg')) return 'image/jpeg';
     // Add more content types as needed
     return 'text/plain';

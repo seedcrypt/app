@@ -37,6 +37,9 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <div className="container">
+        <div className="logo-section">
+            <img src="logo.svg" alt="logo" className="logo" />
+        </div>
         <h1 className="title">SeedCrypt</h1>
         <h2 className="subtitle">Encrypt/decrypt your seed phrase by BIP39 key!</h2>
         <p className="subtitle small"><b>OpenSource:</b> if you don't trust this app - deploy it by yourself:</p>
@@ -70,7 +73,7 @@ const App: React.FC = () => {
         <div className="button-section">
           <button className="button" onClick={handleEncrypt}>Encrypt</button>
           <button className="button" onClick={handleDecrypt}>Decrypt</button>
-          <button className="button" onClick={handleSwap}>
+          <button className="button-icon" onClick={handleSwap}>
             🔃
           </button>
         </div>
