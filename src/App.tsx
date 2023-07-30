@@ -41,9 +41,10 @@ const App: React.FC = () => {
             <img src="logo.svg" alt="logo" className="logo" />
         </div>
         <h1 className="title">SeedCrypt</h1>
+        <h2 className="subtitle">Best for wallets:</h2>
+        <p className="small">Ethereum, Dash, Electrum, Ledger, xVerse and many others</p>
         <h2 className="subtitle">Encrypt/decrypt your seed phrase by BIP39 key!</h2>
-        <p className="subtitle small"><b>OpenSource:</b> if you don't trust this app - deploy it by yourself:</p>
-        <p className="subtitle"><a href={'#'} onClick={() => window.open('https://github.com/seedcrypt/app')}>github.com/seedcrypt/app</a></p>
+        <p className="small"><b>OpenSource:</b> simple algorithm, easy to deploy: <a href={'#'} onClick={() => window.open('https://github.com/seedcrypt/app')}>github.com/seedcrypt/app</a></p>
         <div className="input-section">
           <h2 className="subtitle">Seed Phrase:</h2>
           <SeedPhraseInput words={phraseWords} onChange={setPhraseWords} />
